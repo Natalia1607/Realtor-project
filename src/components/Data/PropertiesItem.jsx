@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-
 import { RiHotelBedFill } from "react-icons/ri";
 import { FaBath } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";

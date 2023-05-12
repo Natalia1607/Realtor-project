@@ -1,12 +1,10 @@
 import React, { Fragment, useState } from "react";
-
 import { useSelector } from "react-redux";
-
 import { RiHotelBedFill } from "react-icons/ri";
 import { FaBath } from "react-icons/fa";
 import { MdSpaceDashboard } from "react-icons/md";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-import defaultLogo from "../../assets/Blog1.jpg";
+import defaultLogo from "../../assets/Property1.jpg";
 import { Link } from "react-router-dom";
 
 const PropertyDetailItems = ({
@@ -30,7 +28,6 @@ const PropertyDetailItems = ({
   const shortSize = size.toFixed(3);
   const photo = photos?.map((image) => image);
   const [chosenPhoto, setChosenPhoto] = useState(photo[0].url);
-
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   return (

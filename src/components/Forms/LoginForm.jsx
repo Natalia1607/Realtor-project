@@ -52,7 +52,7 @@ const LoginForm = () => {
       <div className="font-Poppins pt-40 flex justify-center lg:justify-between px-4 md:px-16 lg:px-20">
         <div className="bg-white px-4 md:px-7 py-10 w-full lg:w-1/2 rounded-[30px] lg:rounded-[0px] lg:rounded-l-[50px] shadow-md lg:shadow">
           <div className="flex flex-col items-center pt-5">
-            <h2 className="text-2xl font-medium mb-3 ">Log in to Macho</h2>
+            <h2 className="text-2xl font-medium mb-3 ">Log in to Realtor</h2>
             <p className="text-ash mb-10 text-sm">
               Don't have an account yet?
               <Link to="/signup">

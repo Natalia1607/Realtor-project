@@ -1,5 +1,4 @@
 import React from "react";
-//import HeroImage from "../../assets/Heroimg.png";
 import { BsFillPlayFill } from "react-icons/bs";
 import HeroImage from "../../assets/HeroImage.svg";
 import HeroForm from "../Forms/HeroForm";

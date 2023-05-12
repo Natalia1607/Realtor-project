@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import defaultIMG from "../../assets/Blog1.jpg";
+import defaultIMG from "../../assets/Property1.jpg";
 
 import { HiIdentification, HiOutlineLocationMarker } from "react-icons/hi";
 
@@ -14,7 +14,7 @@ const AgentItems = ({ id, address, logo, name, contact }) => {
           <div className="py-2 px-2">
             <div className="w-auto p-1 ">
               <img
-                className="h-60 lg:h-40 xl:h-52 w-full object-cover rounded-2xl"
+                className="h-60 lg:h-40 xl:h-52 w-full object-contain rounded-2xl"
                 src={logo || defaultIMG}
                 alt="real estate"
               />

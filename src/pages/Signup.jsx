@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-//import NotFound from "../components/Layout/NotFound";
 import SignupForm from "../components/Forms/SignupForm";
 import Footer from "../components/Layout/Footer";
 

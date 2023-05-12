@@ -49,10 +49,6 @@ const TestimonialItems = ({ data }) => {
                   }`}
                 />
               ))}
-
-              {/* <span id="p2" className="bg-blue py-1 w-10 rounded mx-1" />
-              <span id="p3" className="bg-blue py-1 w-10 rounded mx-1" />
-              <span id="p4" className="bg-blue py-1 w-10 rounded mx-1" /> */}
             </div>
           </div>
         </div>

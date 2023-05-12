@@ -4,11 +4,8 @@ import SignupImage from "../../assets/Signup.jpg";
 import { useSignupMutation } from "../../redux/services/firebase";
 import { login, setActiveUser } from "../../redux/features/authSlice";
 import { useDispatch } from "react-redux";
-// import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 
 const SignupForm = () => {
-  // const [show, setShow] = useState(false);
-  // const handleClick = () => setShow(!show);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
   const emailInputRef = useRef();
@@ -39,7 +36,6 @@ const SignupForm = () => {
       dispatch(login(user.idToken));
       dispatch(setActiveUser(user.email));
       history.replace("/");
-      // console.log(user);
     } catch (error) {
       const { message } = error.data.error;
       setErrorMessage(message);
@@ -93,13 +89,6 @@ const SignupForm = () => {
                 type="password"
                 ref={passwordInputRef}
               />
-              {/* <button
-                type="button"
-                className="text-2xl text-ash relative ml-[17rem] mt-[2.5rem]"
-                onClick={handleClick}
-              >
-                {show ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
-              </button> */}
             </div>
             <button className="bg-blue font-medium w-full text-white py-3 rounded-lg">
               {content}
